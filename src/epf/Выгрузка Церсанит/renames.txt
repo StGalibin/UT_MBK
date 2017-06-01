@@ -1,0 +1,13 @@
+﻿12b61395-b663-4676-ab4a-0b9e59db9549-->und\12b61395-b663-4676-ab4a-0b9e59db9549
+12b61395-b663-4676-ab4a-0b9e59db9549.0-->Form\ФормаНастройкиПочты
+91c392b1-5916-41e1-b054-f367feb071e5-->und\91c392b1-5916-41e1-b054-f367feb071e5
+91c392b1-5916-41e1-b054-f367feb071e5.0-->Form\Форма
+cc9ba180-acea-42a5-a876-03de4f1d1fea-->und\cc9ba180-acea-42a5-a876-03de4f1d1fea
+copyinfo-->und\copyinfo
+d8076dc5-fc35-460b-9bb6-45a51b06f61f.0\info-->und\d8076dc5-fc35-460b-9bb6-45a51b06f61f.0\info
+d8076dc5-fc35-460b-9bb6-45a51b06f61f.0\text-->ObjectModule.bsl
+e003df7d-796b-490a-a343-ffbde6ea2274-->und\e003df7d-796b-490a-a343-ffbde6ea2274
+e003df7d-796b-490a-a343-ffbde6ea2274.0-->Form\ФормаГенерацииСкриптаДляПланировщика
+root-->und\root
+version-->und\version
+versions-->und\versions
