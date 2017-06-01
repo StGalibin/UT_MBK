@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetObject">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Организация</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Организации</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Контрагент</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Контрагенты</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорКонтрагента</dataPath>
+				<field>ДоговорКонтрагента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Договор контрагента</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ДоговорыКонтрагентов</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НачальныйОстаток</dataPath>
+				<field>НачальныйОстаток</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Задолженность на начало периода</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонечныйОстаток</dataPath>
+				<field>КонечныйОстаток</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Задолженность на конец периода</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Отгружено</dataPath>
+				<field>Отгружено</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Отгружено за период</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Оплачено</dataPath>
+				<field>Оплачено</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Оплачено за период</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Регистратор</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НеОплачено</dataPath>
+				<field>НеОплачено</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Не оплачено</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Отсрочка</dataPath>
+				<field>Отсрочка</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Отсрочка по условиям договора</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>5</Digits>
+						<FractionDigits>0</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДнейПросрочки</dataPath>
+				<field>ДнейПросрочки</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Дней просрочки</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>5</Digits>
+						<FractionDigits>0</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаЗаявокНаРасходование</dataPath>
+				<field>СуммаЗаявокНаРасходование</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма заявок на расходование ДС</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПросроченнаяЗадолженность</dataPath>
+				<field>ПросроченнаяЗадолженность</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>В т.ч. просроченная задолженность</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НачальныйОстатокСтат</dataPath>
+				<field>НачальныйОстатокСтат</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Начальный остаток стат</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<condition>true</condition>
+					<group>true</group>
+				</useRestriction>
+				<attributeUseRestriction>
+					<condition>true</condition>
+					<group>true</group>
+				</attributeUseRestriction>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонечныйОстатокСтат</dataPath>
+				<field>КонечныйОстатокСтат</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Конечный остаток стат</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<condition>true</condition>
+					<group>true</group>
+				</useRestriction>
+				<attributeUseRestriction>
+					<condition>true</condition>
+					<group>true</group>
+				</attributeUseRestriction>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ДанныеВзаиморасчетов</objectName>
+		</dataSet>
+		<totalField>
+			<dataPath>Оплачено</dataPath>
+			<expression>Сумма(Оплачено)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Отгружено</dataPath>
+			<expression>Сумма(Отгружено)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>НачальныйОстаток</dataPath>
+			<expression>Сумма(НачальныйОстаток)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КонечныйОстаток</dataPath>
+			<expression>Максимум(КонечныйОстатокСтат)</expression>
+			<group>ДоговорКонтрагента</group>
+		</totalField>
+		<totalField>
+			<dataPath>НеОплачено</dataPath>
+			<expression>Сумма(НеОплачено)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаЗаявокНаРасходование</dataPath>
+			<expression>Сумма(СуммаЗаявокНаРасходование)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ПросроченнаяЗадолженность</dataPath>
+			<expression>Сумма(ПросроченнаяЗадолженность)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КонечныйОстаток</dataPath>
+			<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(КонечныйОстатокСтат)", "ДоговорКонтрагента"))</expression>
+			<group>Организация</group>
+			<group>ОбщийИтог</group>
+		</totalField>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">StandardPeriod</Type>
+			</valueType>
+			<value xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:StandardPeriod">
+				<d4p1:variant xsi:type="d4p1:StandardPeriodVariant">Custom</d4p1:variant>
+				<d4p1:startDate>0001-01-01T00:00:00</d4p1:startDate>
+				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
+			</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ГруппаКонтрагентов</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Группа контрагентов</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Контрагенты</Type>
+			</valueType>
+			<useRestriction>false</useRestriction>
+			<valueListAllowed>true</valueListAllowed>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>ДоговорКонтрагента</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Контрагент</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Организация</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НачальныйОстаток</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Отгружено</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Оплачено</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КонечныйОстаток</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПросроченнаяЗадолженность</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Регистратор</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДнейПросрочки</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаЗаявокНаРасходование</field>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Период</dcscor:parameter>
+			<dcscor:value xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+			</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>Организация</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<item xsi:type="StructureItemGroup">
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Контрагент</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+			</selection>
+			<conditionalAppearance>
+				<item>
+					<selection/>
+					<filter/>
+					<appearance>
+						<dcscor:item xsi:type="SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:LightSteelBlue</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						</dcscor:item>
+					</appearance>
+				</item>
+			</conditionalAppearance>
+			<item xsi:type="StructureItemGroup">
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>ДоговорКонтрагента</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>Отсрочка</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+				<conditionalAppearance>
+					<item>
+						<selection/>
+						<filter/>
+						<appearance>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</appearance>
+					</item>
+					<item>
+						<selection/>
+						<filter/>
+						<appearance>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="true" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</appearance>
+					</item>
+				</conditionalAppearance>
+				<item xsi:type="StructureItemGroup">
+					<order>
+						<item xsi:type="OrderItemAuto"/>
+					</order>
+					<selection>
+						<item xsi:type="SelectedItemAuto"/>
+					</selection>
+					<conditionalAppearance>
+						<item>
+							<selection/>
+							<filter>
+								<item xsi:type="FilterItemComparison">
+									<left xsi:type="dcscor:Field">ДнейПросрочки</left>
+									<comparisonType>Greater</comparisonType>
+									<right xsi:type="xs:decimal">0</right>
+								</item>
+							</filter>
+							<appearance>
+								<dcscor:item xsi:type="SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightPink</dcscor:value>
+								</dcscor:item>
+							</appearance>
+						</item>
+						<item>
+							<selection/>
+							<filter>
+								<item xsi:type="FilterItemComparison">
+									<left xsi:type="dcscor:Field">КонечныйОстаток</left>
+									<comparisonType>Equal</comparisonType>
+									<right xsi:type="xs:decimal">0</right>
+								</item>
+								<item xsi:type="FilterItemComparison">
+									<left xsi:type="dcscor:Field">СуммаЗаявокНаРасходование</left>
+									<comparisonType>Equal</comparisonType>
+									<right xsi:type="xs:decimal">0</right>
+								</item>
+							</filter>
+							<appearance>
+								<dcscor:item xsi:type="SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:LightGreen</dcscor:value>
+								</dcscor:item>
+							</appearance>
+						</item>
+						<item>
+							<selection/>
+							<filter>
+								<item xsi:type="FilterItemComparison">
+									<left xsi:type="dcscor:Field">СуммаЗаявокНаРасходование</left>
+									<comparisonType>Greater</comparisonType>
+									<right xsi:type="xs:decimal">0</right>
+								</item>
+							</filter>
+							<appearance>
+								<dcscor:item xsi:type="SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Khaki</dcscor:value>
+								</dcscor:item>
+							</appearance>
+						</item>
+						<item>
+							<selection/>
+							<filter>
+								<item xsi:type="FilterItemComparison">
+									<left xsi:type="dcscor:Field">СуммаЗаявокНаРасходование</left>
+									<comparisonType>Equal</comparisonType>
+									<right xsi:type="dcscor:Field">КонечныйОстаток</right>
+								</item>
+								<item xsi:type="FilterItemComparison">
+									<left xsi:type="dcscor:Field">КонечныйОстаток</left>
+									<comparisonType>Greater</comparisonType>
+									<right xsi:type="xs:decimal">0</right>
+								</item>
+							</filter>
+							<appearance>
+								<dcscor:item xsi:type="SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:MediumGreen</dcscor:value>
+								</dcscor:item>
+							</appearance>
+						</item>
+					</conditionalAppearance>
+				</item>
+			</item>
+		</item>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
